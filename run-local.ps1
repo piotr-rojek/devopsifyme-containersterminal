@@ -1,7 +1,7 @@
 $imageTag = "devopsifyme/containersterminal:local"
 $containerName = "test"
 
-$fragmentPath = "Users/$($env:USERNAME)/AppData/Local/Microsoft/Windows Terminal/Fragments/Test"
+$fragmentPath = "Users/$($env:USERNAME)/AppData/Local/Microsoft/Windows Terminal/Fragments/DevOpsifyMe.ContainersTerminal"
 $winPath = "c:/$fragmentPath"
 $linuxPath = "/mnt/c/$fragmentPath"
 
