@@ -16,7 +16,7 @@ function Get-KnownImagesProfiles {
     {
         @{
             name = "Known Image $image"
-            commandline = "docker run -it -v /mnt/c:/mnt/c -l $ContainerLabel $image sh"
+            commandline = "docker run -it --rm -v /mnt/c:/mnt/c -l $ContainerLabel $image sh"
             closeOnExit = "graceful"
             icon = $IconPath
             hidden = $Hidden ? $true : $false

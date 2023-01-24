@@ -33,7 +33,7 @@ function Get-ImageProfiles {
 
         @{
             name = "Image $($image.Repository):$($image.Tag)"
-            commandline = "docker run -it -v /mnt/c:/mnt/c -l $ContainerLabel $($image.ID) sh"
+            commandline = "docker run -it --rm -v /mnt/c:/mnt/c -l $ContainerLabel $($image.ID) sh"
             closeOnExit = "graceful"
             icon = $IconPath
             hidden = $Hidden ? $true : $false
